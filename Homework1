@@ -1,0 +1,13 @@
+#include<stdio.h>
+#include<unistd.h>
+#include<string.h>
+#include<stdlib.h>
+#define Name "Michael Menlikalew\n"
+int main ()
+{
+    char myStrBuffer[50];
+    snprintf(myStrBuffer, 50, "\nHello 415! i am %s", Name);
+    write(1, myStrBuffer, strlen(myStrBuffer));
+    
+    return 0;
+}
